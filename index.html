@@ -1,0 +1,182 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>鸡场 - 独立网络架构与连接配置指南</title><meta name="description" content="鸡场：冷静克制的网络连接与架构说明书。提供多层次流量方案、客户端适配指南及常见技术问题解答。"><meta name="keywords" content="鸡场, 网络架构, 连接配置, 节点说明, 使用手册"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-e120875913.nxlrx.cn/"><meta property="og:type" content="website"><meta property="og:title" content="鸡场 - 独立网络架构与连接配置指南"><meta property="og:description" content="鸡场：冷静克制的网络连接与架构说明书。提供多层次流量方案、客户端适配指南及常见技术问题解答。"><meta property="og:url" content="https://p-e120875913.nxlrx.cn/"><meta property="og:site_name" content="鸡场"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-e120875913.nxlrx.cn/", "name": "鸡场 - 独立网络架构与连接配置指南", "description": "鸡场：冷静克制的网络连接与架构说明书。提供多层次流量方案、客户端适配指南及常见技术问题解答。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="81d9204cd804fe1b1747e1c9:e7222f81c8482061fde8c28c5bb91107b00a55048755ea84ba9e8bcad0a4030e:7cada7ab1195ef9ab557"></head><body id="top"><style>
+* {box-sizing: border-box;margin: 0;padding: 0}
+body {background-color: #0d0d0d;color: #e0e0e0;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;line-height: 1.6;font-size: 16px}
+a {color: inherit;text-decoration: none}
+header {border-bottom: 1px solid #222;position: sticky;top: 0;background-color: #0d0d0d;z-index: 100}
+.nav-container {max-width: 1200px;margin: 0 auto;padding: 12px 24px;display: flex;justify-content: space-between;align-items: center}
+.brand-logo {font-weight: 700;letter-spacing: 2px;color: #39ff14;font-size: 1.1rem}
+.nav-links {display: flex;gap: 24px;font-size: 0.9rem;color: #888}
+.nav-links a:hover {color: #39ff14}
+main {max-width: 1200px;margin: 0 auto;padding: 48px 24px}
+.hero {display: grid;grid-template-columns: 2fr 1fr;gap: 48px;margin-bottom: 80px;align-items: start}
+@media (max-width: 768px) {
+  .hero {grid-template-columns: 1fr;gap: 24px}
+}
+.hero-main h1 {font-size: 3.5rem;color: #ffffff;margin-bottom: 24px;letter-spacing: -1px;font-weight: 800}
+.hero-main h1 span {color: #39ff14}
+.hero-intro {font-size: 1.25rem;color: #aaa;border-left: 2px solid #39ff14;padding-left: 20px;margin-bottom: 32px}
+.hero-sidebar {background: #141414;padding: 32px;border-radius: 4px}
+.hero-sidebar h3 {font-size: 0.9rem;text-transform: uppercase;letter-spacing: 1px;color: #39ff14;margin-bottom: 16px}
+.hero-sidebar p {font-size: 0.95rem;color: #999;margin-bottom: 16px}
+section {margin-bottom: 80px}
+section h2 {font-size: 2rem;color: #fff;margin-bottom: 32px;font-weight: 600}
+.magazine-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 32px}
+@media (max-width: 768px) {
+  .magazine-grid {grid-template-columns: 1fr}
+}
+.magazine-col h3 {font-size: 1.2rem;color: #fff;margin-bottom: 12px}
+.magazine-col p {color: #888;font-size: 0.95rem}
+.plans-table {width: 100%;border-collapse: collapse;margin-top: 24px}
+.plans-table th, .plans-table td {padding: 20px;text-align: left;border-bottom: 1px solid #222}
+.plans-table th {color: #fff;font-weight: 600;background-color: #141414}
+.plans-table td {color: #aaa;font-size: 0.95rem}
+.plans-table td:first-child {color: #fff;font-weight: 600}
+.highlight-row td {color: #fff;background-color: #111}
+.badge {display: inline-block;background-color: #39ff14;color: #0d0d0d;font-size: 0.75rem;padding: 2px 6px;border-radius: 2px;font-weight: 700;margin-left: 8px;vertical-align: middle}
+.faq-grid {display: grid;grid-template-columns: 1fr 1fr;gap: 40px}
+@media (max-width: 768px) {
+  .faq-grid {grid-template-columns: 1fr}
+}
+.faq-item {margin-bottom: 32px}
+.faq-item h3 {font-size: 1.1rem;color: #fff;margin-bottom: 12px}
+.faq-item p {color: #888;font-size: 0.95rem}
+.steps-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 32px}
+@media (max-width: 768px) {
+  .steps-grid {grid-template-columns: 1fr}
+}
+.step-card {padding: 24px 0}
+.step-num {font-size: 2.5rem;color: #39ff14;font-weight: 800;margin-bottom: 16px;line-height: 1}
+.step-card h3 {font-size: 1.2rem;color: #fff;margin-bottom: 12px}
+.step-card p {color: #888;font-size: 0.95rem}
+footer {border-top: 1px solid #222;padding: 40px 24px;text-align: center;color: #666;font-size: 0.85rem}
+</style><header>
+  <div class="nav-container">
+    <div class="brand-logo">鸡场</div>
+    <div class="nav-links">
+      <a href="#overview">架构概述</a>
+      <a href="#plans">服务层级</a>
+      <a href="#guide">配置指引</a>
+      <a href="#faq">常见问题</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-main">
+      <h1>鸡场 · 稳定、结构化与<span>精确控制</span>的网络方案</h1>
+      <div class="hero-intro">
+        鸡场提供严谨的数据传输分发层级与多协议支持。我们以冷静的工程逻辑，为您构建稳定、高效的数字链路。
+      </div>
+    </div>
+    <div class="hero-sidebar">
+      <h3>核心参数</h3>
+      <p>协议：多协议自适应分发</p>
+      <p>架构：分布式智能路由</p>
+      <p>状态：全系统平稳运行中</p>
+    </div>
+  </div>
+
+  <section id="overview">
+    <h2>架构概览</h2>
+    <div class="magazine-grid">
+      <div class="magazine-col">
+        <h3>多维节点池</h3>
+        <p>系统内置多层级节点拓扑，依据实时网络状态自动测算并分发最优路由，保障传输链路的持续畅通与低延迟特性。</p>
+      </div>
+      <div class="magazine-col">
+        <h3>高吞吐冗余</h3>
+        <p>所有分发端配备冗余备份机制，在单点发生波动时可实现毫秒级无感切换，确保各类传输任务不中断。</p>
+      </div>
+      <div class="magazine-col">
+        <h3>协议兼容性</h3>
+        <p>全面兼容主流现代传输协议，适配各类终端操作系统，无需复杂的底层调整即可完成安全接入。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>服务方案对照</h2>
+    <table class="plans-table">
+      <thead>
+        <tr>
+          <th>方案名称</th>
+          <th>每月流量</th>
+          <th>并发设备</th>
+          <th>核心权益</th>
+          <th>价格参考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>基础版</td>
+          <td>100GB</td>
+          <td>3 台</td>
+          <td>普通线路节点池 / 基础流媒体解锁</td>
+          <td>¥15/月<br><span>年付 ¥150/年</span></td>
+        </tr>
+        <tr class="highlight-row">
+          <td>旗舰版 <span class="badge">推荐</span></td>
+          <td>300GB</td>
+          <td>5 台</td>
+          <td>IPLC 专线优化 / 全节点原生解锁 / 优先支持</td>
+          <td>¥35/月<br><span>年付 ¥350/年</span></td>
+        </tr>
+        <tr>
+          <td>团队版</td>
+          <td>1000GB</td>
+          <td>20 台</td>
+          <td>VIP 专属高带宽 / 企业定制路由 / 专属经理</td>
+          <td>¥85/月<br><span>年付 ¥850/年</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="guide">
+    <h2>接入与配置流程</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <h3>获取订阅凭证</h3>
+        <p>在用户控制面板中复制专属于您的安全订阅链接，该凭证包含您的权限层级与节点列表信息。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <h3>选择适配客户端</h3>
+        <p>根据您使用的操作系统下载对应的现代连接客户端，完成基础环境的初始化安装。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <h3>导入与启用</h3>
+        <p>将订阅凭证导入客户端，更新节点列表后选择可用节点即可完成链路激活。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>常见技术问题</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>如何选择最适合的套餐？</h3>
+        <p>请根据您的日常数据流量消耗及同时在线设备数量进行评估。常规浏览与流媒体用户推荐选择旗舰版，可获得更优的线路与专线加速体验。</p>
+      </div>
+      <div class="faq-item">
+        <h3>订阅链接泄露后如何处理？</h3>
+        <p>如发现凭证异常，请立即登录管理后台重置订阅链接。重置后旧链接将立即失效，所有客户端需更新新链接方可接入。</p>
+      </div>
+      <div class="faq-item">
+        <h3>节点显示延迟高或无法连接怎么办？</h3>
+        <p>请尝试手动更新订阅列表以获取最新节点IP。同时检查本地网络环境，或切换至备用专线节点进行测试。</p>
+      </div>
+      <div class="faq-item">
+        <h3>支持哪些操作系统与客户端？</h3>
+        <p>全面支持主流操作系统。详细的客户端配置手册可在用户后台查阅，内含各平台标准配置步骤。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 鸡场 Network Architecture. 保留所有权利。</p>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>

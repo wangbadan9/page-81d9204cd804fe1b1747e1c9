@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "template_version": "3a528c553883e59d7cfa",
+  "page_size": 20,
+  "site_id": "7ec93ae4a944bfab40b75549",
+  "owner": "wangbadan9",
+  "repo": "page-81d9204cd804fe1b1747e1c9",
+  "title": "鸡场",
+  "mode": "repo",
+  "articles": [
+    {
+      "id": "81d9204cd804fe1b1747e1c9",
+      "a": "鸡场",
+      "b": "",
+      "entity": "鸡场",
+      "brand": "鸡场",
+      "separator": "",
+      "path": "index.html",
+      "hash": "e7222f81c8482061fde8c28c5bb91107b00a55048755ea84ba9e8bcad0a4030e",
+      "content": {
+        "keyword1": "鸡场",
+        "keyword2": "",
+        "primary_entity": "鸡场",
+        "plans": [],
+        "clients": [],
+        "_offline": false,
+        "content": {
+          "AI_HERO_INTRO": "鸡场：冷静克制的网络连接与架构说明书。提供多层次流量方案、客户端适配指南及常见技术问题解答。",
+          "AI_DESCRIPTION": "鸡场：冷静克制的网络连接与架构说明书。提供多层次流量方案、客户端适配指南及常见技术问题解答。"
+        },
+        "_brand_page": {
+          "version": 3,
+          "body": "<style>\n* {box-sizing: border-box;margin: 0;padding: 0}\nbody {background-color: #0d0d0d;color: #e0e0e0;font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;line-height: 1.6;font-size: 16px}\na {color: inherit;text-decoration: none}\nheader {border-bottom: 1px solid #222;position: sticky;top: 0;background-color: #0d0d0d;z-index: 100}\n.nav-container {max-width: 1200px;margin: 0 auto;padding: 12px 24px;display: flex;justify-content: space-between;align-items: center}\n.brand-logo {font-weight: 700;letter-spacing: 2px;color: #39ff14;font-size: 1.1rem}\n.nav-links {display: flex;gap: 24px;font-size: 0.9rem;color: #888}\n.nav-links a:hover {color: #39ff14}\nmain {max-width: 1200px;margin: 0 auto;padding: 48px 24px}\n.hero {display: grid;grid-template-columns: 2fr 1fr;gap: 48px;margin-bottom: 80px;align-items: start}\n@media (max-width: 768px) {\n  .hero {grid-template-columns: 1fr;gap: 24px}\n}\n.hero-main h1 {font-size: 3.5rem;color: #ffffff;margin-bottom: 24px;letter-spacing: -1px;font-weight: 800}\n.hero-main h1 span {color: #39ff14}\n.hero-intro {font-size: 1.25rem;color: #aaa;border-left: 2px solid #39ff14;padding-left: 20px;margin-bottom: 32px}\n.hero-sidebar {background: #141414;padding: 32px;border-radius: 4px}\n.hero-sidebar h3 {font-size: 0.9rem;text-transform: uppercase;letter-spacing: 1px;color: #39ff14;margin-bottom: 16px}\n.hero-sidebar p {font-size: 0.95rem;color: #999;margin-bottom: 16px}\nsection {margin-bottom: 80px}\nsection h2 {font-size: 2rem;color: #fff;margin-bottom: 32px;font-weight: 600}\n.magazine-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 32px}\n@media (max-width: 768px) {\n  .magazine-grid {grid-template-columns: 1fr}\n}\n.magazine-col h3 {font-size: 1.2rem;color: #fff;margin-bottom: 12px}\n.magazine-col p {color: #888;font-size: 0.95rem}\n.plans-table {width: 100%;border-collapse: collapse;margin-top: 24px}\n.plans-table th, .plans-table td {padding: 20px;text-align: left;border-bottom: 1px solid #222}\n.plans-table th {color: #fff;font-weight: 600;background-color: #141414}\n.plans-table td {color: #aaa;font-size: 0.95rem}\n.plans-table td:first-child {color: #fff;font-weight: 600}\n.highlight-row td {color: #fff;background-color: #111}\n.badge {display: inline-block;background-color: #39ff14;color: #0d0d0d;font-size: 0.75rem;padding: 2px 6px;border-radius: 2px;font-weight: 700;margin-left: 8px;vertical-align: middle}\n.faq-grid {display: grid;grid-template-columns: 1fr 1fr;gap: 40px}\n@media (max-width: 768px) {\n  .faq-grid {grid-template-columns: 1fr}\n}\n.faq-item {margin-bottom: 32px}\n.faq-item h3 {font-size: 1.1rem;color: #fff;margin-bottom: 12px}\n.faq-item p {color: #888;font-size: 0.95rem}\n.steps-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 32px}\n@media (max-width: 768px) {\n  .steps-grid {grid-template-columns: 1fr}\n}\n.step-card {padding: 24px 0}\n.step-num {font-size: 2.5rem;color: #39ff14;font-weight: 800;margin-bottom: 16px;line-height: 1}\n.step-card h3 {font-size: 1.2rem;color: #fff;margin-bottom: 12px}\n.step-card p {color: #888;font-size: 0.95rem}\nfooter {border-top: 1px solid #222;padding: 40px 24px;text-align: center;color: #666;font-size: 0.85rem}\n</style><header>\n  <div class=\"nav-container\">\n    <div class=\"brand-logo\">鸡场</div>\n    <div class=\"nav-links\">\n      <a href=\"#overview\">架构概述</a>\n      <a href=\"#plans\">服务层级</a>\n      <a href=\"#guide\">配置指引</a>\n      <a href=\"#faq\">常见问题</a>\n    </div>\n  </div>\n</header>\n\n<main>\n  <div class=\"hero\">\n    <div class=\"hero-main\">\n      <h1>鸡场 · 稳定、结构化与<span>精确控制</span>的网络方案</h1>\n      <div class=\"hero-intro\">\n        鸡场提供严谨的数据传输分发层级与多协议支持。我们以冷静的工程逻辑，为您构建稳定、高效的数字链路。\n      </div>\n    </div>\n    <div class=\"hero-sidebar\">\n      <h3>核心参数</h3>\n      <p>协议：多协议自适应分发</p>\n      <p>架构：分布式智能路由</p>\n      <p>状态：全系统平稳运行中</p>\n    </div>\n  </div>\n\n  <section id=\"overview\">\n    <h2>架构概览</h2>\n    <div class=\"magazine-grid\">\n      <div class=\"magazine-col\">\n        <h3>多维节点池</h3>\n        <p>系统内置多层级节点拓扑，依据实时网络状态自动测算并分发最优路由，保障传输链路的持续畅通与低延迟特性。</p>\n      </div>\n      <div class=\"magazine-col\">\n        <h3>高吞吐冗余</h3>\n        <p>所有分发端配备冗余备份机制，在单点发生波动时可实现毫秒级无感切换，确保各类传输任务不中断。</p>\n      </div>\n      <div class=\"magazine-col\">\n        <h3>协议兼容性</h3>\n        <p>全面兼容主流现代传输协议，适配各类终端操作系统，无需复杂的底层调整即可完成安全接入。</p>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"plans\">\n    <h2>服务方案对照</h2>\n    <table class=\"plans-table\">\n      <thead>\n        <tr>\n          <th>方案名称</th>\n          <th>每月流量</th>\n          <th>并发设备</th>\n          <th>核心权益</th>\n          <th>价格参考</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>基础版</td>\n          <td>100GB</td>\n          <td>3 台</td>\n          <td>普通线路节点池 / 基础流媒体解锁</td>\n          <td>¥15/月<br><span>年付 ¥150/年</span></td>\n        </tr>\n        <tr class=\"highlight-row\">\n          <td>旗舰版 <span class=\"badge\">推荐</span></td>\n          <td>300GB</td>\n          <td>5 台</td>\n          <td>IPLC 专线优化 / 全节点原生解锁 / 优先支持</td>\n          <td>¥35/月<br><span>年付 ¥350/年</span></td>\n        </tr>\n        <tr>\n          <td>团队版</td>\n          <td>1000GB</td>\n          <td>20 台</td>\n          <td>VIP 专属高带宽 / 企业定制路由 / 专属经理</td>\n          <td>¥85/月<br><span>年付 ¥850/年</span></td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section id=\"guide\">\n    <h2>接入与配置流程</h2>\n    <div class=\"steps-grid\">\n      <div class=\"step-card\">\n        <div class=\"step-num\">01</div>\n        <h3>获取订阅凭证</h3>\n        <p>在用户控制面板中复制专属于您的安全订阅链接，该凭证包含您的权限层级与节点列表信息。</p>\n      </div>\n      <div class=\"step-card\">\n        <div class=\"step-num\">02</div>\n        <h3>选择适配客户端</h3>\n        <p>根据您使用的操作系统下载对应的现代连接客户端，完成基础环境的初始化安装。</p>\n      </div>\n      <div class=\"step-card\">\n        <div class=\"step-num\">03</div>\n        <h3>导入与启用</h3>\n        <p>将订阅凭证导入客户端，更新节点列表后选择可用节点即可完成链路激活。</p>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"faq\">\n    <h2>常见技术问题</h2>\n    <div class=\"faq-grid\">\n      <div class=\"faq-item\">\n        <h3>如何选择最适合的套餐？</h3>\n        <p>请根据您的日常数据流量消耗及同时在线设备数量进行评估。常规浏览与流媒体用户推荐选择旗舰版，可获得更优的线路与专线加速体验。</p>\n      </div>\n      <div class=\"faq-item\">\n        <h3>订阅链接泄露后如何处理？</h3>\n        <p>如发现凭证异常，请立即登录管理后台重置订阅链接。重置后旧链接将立即失效，所有客户端需更新新链接方可接入。</p>\n      </div>\n      <div class=\"faq-item\">\n        <h3>节点显示延迟高或无法连接怎么办？</h3>\n        <p>请尝试手动更新订阅列表以获取最新节点IP。同时检查本地网络环境，或切换至备用专线节点进行测试。</p>\n      </div>\n      <div class=\"faq-item\">\n        <h3>支持哪些操作系统与客户端？</h3>\n        <p>全面支持主流操作系统。详细的客户端配置手册可在用户后台查阅，内含各平台标准配置步骤。</p>\n      </div>\n    </div>\n  </section>\n</main>\n\n<footer>\n  <p>© 鸡场 Network Architecture. 保留所有权利。</p>\n</footer>",
+          "hash": "03aaae19254dd9bc384a868b2ef7467279bedb168e63d84075f7f77f03c16914",
+          "seo": {
+            "title": "鸡场 - 独立网络架构与连接配置指南",
+            "keywords": "鸡场, 网络架构, 连接配置, 节点说明, 使用手册",
+            "description": "鸡场：冷静克制的网络连接与架构说明书。提供多层次流量方案、客户端适配指南及常见技术问题解答。"
+          },
+          "provider": "grok",
+          "model": "gemini-3.7-flash",
+          "design": {
+            "no": "330",
+            "hero": "3 杂志式多栏网格配引言",
+            "palette": "1 墨黑配荧光绿",
+            "nav": "1 顶部细横条",
+            "card": "1 无边框仅靠留白分隔",
+            "plans_view": "1 横向对比表格",
+            "faq_view": "1 双栏问答",
+            "tone": "1 冷静克制的说明书口吻",
+            "order": "首屏优先，其余区块由 AI 根据已选构图和信息关系安排"
+          }
+        }
+      }
+    }
+  ],
+  "domain": {
+    "apex": "nxlrx.cn",
+    "host": "p-e120875913.nxlrx.cn",
+    "kind": "subdomain",
+    "candidate_roots_ref": "subdomain_roots:91e741dce7c147d9ce91af6f84daa678dae755807d903b04925261e0a3a8d804",
+    "prefix_mode": "auto"
+  },
+  "friendlinks": [],
+  "file_hashes": {
+    "index.html": "768ebca29b2f79f4322c6339a9cc02e001b09b4df95ba6d53ae0184a11b5b22b",
+    "sitemap.xml": "4f1abb84be54393fdd12ca13e613c564e68ddabb4f0da4a5221e46ed8168e904",
+    ".nojekyll": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "CNAME": "4f8c06b7384d37268afdbea14d994373c7ad3e85d7d5eccce9d1d338033f89ab",
+    "robots.txt": "dd482c737f97f60e59dabf8d1681b967ed0ce2465e66d87300fb2068556abeb6",
+    "12df2fe1be3b3d18ef0c293f87db565e.txt": "c4a4b7b940e2c0556dd1b0b4e88f0b3bbdc74fbfa07ebd298758260b158ca689"
+  },
+  "revision": "2b5d249bc83a4b12995f852420cbae337ff6e1366ee0540d3d5ce87109f9f3df"
+}
